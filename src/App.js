@@ -1,11 +1,14 @@
 import "assets/css/app.css";
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+
+import HomePage from 'pages/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-x1 text">
-        Test
-      </h1>
+      <Router>
+        <Route path="/" component={HomePage}/>
+      </Router>
     </div>
   );
 }
